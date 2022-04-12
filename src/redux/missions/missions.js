@@ -17,7 +17,6 @@ const initialState = {
 // Action creaters
 
 export const fetchMissionsList = () => async (dispatch) => {
-  console.log('Micky');
   dispatch({
     type: FETCH_MISSIONS_REQUEST,
   });

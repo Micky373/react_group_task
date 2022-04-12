@@ -15,7 +15,6 @@ const Missions = () => {
   }, []);
   const missionLists = useSelector((state) => state.missions);
   const loadingStatus = missionLists.loading;
-  console.log(missionLists);
 
   return (
     <div className="mission_container" style={missionsContainerStyle}>
