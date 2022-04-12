@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 - Install packages by running `npm install`
 - Run the app by running `npm start`
 
-## Author
+## Authors
 
 👤 **Michael Tamirie**
 
