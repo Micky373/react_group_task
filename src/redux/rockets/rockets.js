@@ -30,7 +30,6 @@ export function getRocketList() {
     await fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         dispatch({ type: FETCH_ROCKETS, data });
       });
   };
