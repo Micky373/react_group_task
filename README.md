@@ -6,9 +6,9 @@
 
 ![screenshot](/src/images/screenShot.PNG)
 
-<!-- ## Live Demo
+## Live Demo
 
-- [LiveDemo](https://redux-deployement.herokuapp.com/) -->
+- [LiveDemo](https://625538fa24b29320bc0005b3--mellow-fox-984c1b.netlify.app/)
 
 ## Built With
 
