@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50%;
+  padding: 1rem 2rem;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image_container {
+  display: flex;
+  gap: 1rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav_end {
+  height: 0.125rem;
+  margin: 1rem 3rem;
+  background-color: #e8e8e8;
+}
+
+.line_end {
+  height: 1.5rem;
+  width: 0.2rem;
+  background-color: #e8e8e8;
+}
+
+.my_profile,
+.rockets,
+.missions {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
