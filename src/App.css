@@ -2,7 +2,8 @@ body {
   margin: 0;
 }
 
-li,a{
+li,
+a {
   text-decoration: none;
   list-style: none;
   color: black;
@@ -26,6 +27,7 @@ li,a{
   display: flex;
   gap: 1rem;
 }
+
 img {
   width: 5rem;
   height: 5rem;
@@ -43,7 +45,9 @@ img {
   background-color: #e8e8e8;
 }
 
-.my_profile,.rockets, .missions {
+.my_profile,
+.rockets,
+.missions {
   height: 20rem;
   display: flex;
   justify-content: center;
