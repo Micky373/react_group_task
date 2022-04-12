@@ -7,7 +7,7 @@ const Navbar = () => (
     <div className="nav_container">
       <div className="image_container">
         <img alt="header logo" src={`${Img}`} />
-        <h1>Space Travlers&apos; Hub</h1>
+        <h1>Check Travlers&apos; Hub</h1>
       </div>
       <ul className="nav_links">
         <Link to="/"><li className="page_links">Rockets</li></Link>
