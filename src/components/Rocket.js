@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+const divContainerStyle = {
+  padding: '1rem',
+};
 
 const Rocket = (props) => {
   const {
-    image, name, description, reserved, id,
+    image, name, description,
   } = props;
   return (
-    <div className="card">
+    <div className="card" style={divContainerStyle}>
       <div className="imageContainer">
         <img src={image} alt="Rocket" />
       </div>
@@ -16,11 +21,17 @@ const Rocket = (props) => {
           {/* tag to add */}
           <p className="Description">{description}</p>
         </div>
-        <button />
+        <button type="button">Reserve</button>
         {/* button to add */}
       </div>
     </div>
   );
+};
+
+Rocket.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default Rocket;
