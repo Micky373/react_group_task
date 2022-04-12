@@ -2,11 +2,17 @@ body {
   margin: 0;
 }
 
-li,
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
-  list-style: none;
   color: black;
+}
+
+a:focus {
+ text-decoration: underline;
 }
 
 .nav_container {
