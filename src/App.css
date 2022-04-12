@@ -12,7 +12,7 @@ a {
 }
 
 a:focus {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav_container {
