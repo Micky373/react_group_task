@@ -21,7 +21,6 @@ const Rocket = (props) => {
       <div className="Rocket_Info">
         <h2 className="Rocket_Name">{name}</h2>
         <div className="Tag_and_Description">
-          {/* tag to add */}
           <p className="Description">
             <span className={reserved ? Styles.tag : Styles.none}>Reserved</span>
             {description}
