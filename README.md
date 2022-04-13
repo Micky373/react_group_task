@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-- [LiveDemo](https://exquisite-squirrel-f8cae3.netlify.app/)
+- [Space_travelers_hub](https://exquisite-squirrel-f8cae3.netlify.app/)
 
 ## Built With
 
