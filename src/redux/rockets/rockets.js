@@ -25,6 +25,11 @@ export default function rocketReducer(state = [], action) {
   }
 }
 
+export function toggleReserved(id) {
+  console.log(id);
+  return { type: TOGGLE_RESERVED, id };
+}
+
 export function getRocketList() {
   return async (dispatch) => {
     await fetch(url)

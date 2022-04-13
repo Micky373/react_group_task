@@ -1,0 +1,19 @@
+.none {
+  display: none;
+}
+
+.tag {
+  display: inline-block;
+  background-color: aqua;
+}
+
+.btnReserve {
+  background-color: rgb(68, 68, 231);
+  color: white;
+}
+
+.btnReserved {
+  background-color: aliceblue;
+  color: grey;
+  border: 1px solid gray;
+}
