@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-- [LiveDemo](https://mellow-fox-984c1b.netlify.app/)
+- [LiveDemo](https://astounding-druid-f19b01.netlify.app/)
 
 ## Built With
 

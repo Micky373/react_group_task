@@ -3,7 +3,7 @@ const url = 'https://api.spacexdata.com/v3/rockets';
 const FETCH_ROCKETS = 'react_group_task/rockets/FETCH_ROCKETS';
 const TOGGLE_RESERVED = 'react_group_task/rockets/TOGGLE_RESERVED';
 
-export default function reducer(state = [], action) {
+export default function rocketReducer(state = [], action) {
   switch (action.type) {
     case FETCH_ROCKETS:
       return action.data.map((rocket) => {
