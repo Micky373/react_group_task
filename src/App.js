@@ -7,11 +7,13 @@ import Rockets from './components/Rockets';
 import Navbar from './components/Navbar';
 import './App.css';
 import { getRocketList } from './redux/rockets/rockets';
+import { fetchMissionsList } from './redux/missions/missions';
 
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getRocketList());
+    dispatch(fetchMissionsList());
   }, []);
 
   return (
