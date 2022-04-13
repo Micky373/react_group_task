@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-- [LiveDemo](https://exquisite-squirrel-f8cae3.netlify.app/)
+- [LiveDemo](https://scintillating-hummingbird-fdc4c7.netlify.app/)
 
 ## Built With
 
