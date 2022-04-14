@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Quintessential, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+button {
+  border-radius: 5px;
+  font-family: Quintessential, sans-serif;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50%;
+  padding: 1rem 2rem;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image_container {
+  display: flex;
+  gap: 1rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav_end {
+  height: 0.125rem;
+  margin: 1rem 3rem;
+  background-color: #e8e8e8;
+}
+
+.line_end {
+  height: 1.5rem;
+  width: 0.2rem;
+  background-color: #e8e8e8;
+}
+
+.rockets,
+.missions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tr,
+td {
+  border: 1px solid #bdb4b4;
+  text-align: center;
+  padding: 1rem;
+}
+
+.table_header {
+  border: 1px solid #bdb4b4;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.mission_list:nth-child(even),
+.mission_list:hover {
+  background-color: #e8e8e8;
+}
