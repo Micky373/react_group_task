@@ -6,7 +6,7 @@ const Rockets = () => {
   const rocketList = useSelector((state) => state.rocket, shallowEqual);
 
   return (
-    <div>
+    <div data-testid="rockets">
       {rocketList.map((rocket) => (
         <Rocket
           image={rocket.images[0]}

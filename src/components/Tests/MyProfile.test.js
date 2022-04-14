@@ -20,6 +20,5 @@ it('renders correctly', () => {
       <MyProfile />
     </Provider>,
   );
-  screen.debug();
-  /* expect(screen.getByText(/Reserve MyProfile/)).toBeInTheDocument(); */
+  expect(screen.getByText(/My Rockets/)).toBeInTheDocument();
 });
