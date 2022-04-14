@@ -20,6 +20,7 @@ button {
   border-radius: 5px;
   font-family: Quintessential, sans-serif;
 }
+
 .nav_container {
   display: flex;
   justify-content: space-around;
@@ -67,7 +68,8 @@ table {
   border-spacing: 0;
 }
 
-tr,td {
+tr,
+td {
   border: 1px solid #bdb4b4;
   text-align: center;
   padding: 1rem;
@@ -80,6 +82,7 @@ tr,td {
   font-size: 1.5rem;
 }
 
-.mission_list:nth-child(even),.mission_list:hover{
+.mission_list:nth-child(even),
+.mission_list:hover {
   background-color: #e8e8e8;
 }
