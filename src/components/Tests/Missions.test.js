@@ -2,13 +2,13 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
-import MyProfile from '../MyProfile';
+import Missions from '../Missions';
 import store from '../../redux/configureStore';
 
 it('it works', () => {
   const tree = render(
     <Provider store={store}>
-      <MyProfile />
+      <Missions />
     </Provider>,
   );
   expect(tree).toMatchSnapshot();
@@ -17,8 +17,8 @@ it('it works', () => {
 it('renders correctly', () => {
   render(
     <Provider store={store}>
-      <MyProfile />
+      <Missions />
     </Provider>,
   );
-  expect(screen.getByText(/Loading/)).toBeInTheDocument();
+  expect(screen.getByText('***Loading***')).toBeInTheDocument();
 });

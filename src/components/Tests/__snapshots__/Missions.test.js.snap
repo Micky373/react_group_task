@@ -6,12 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="my_profile"
-        style="display: flex; gap: 5rem; justify-content: center; padding: 2rem;"
+        class="mission_container"
+        style="display: flex; justify-content: center;"
       >
-        <h1
-          style="font-size: 3rem; text-align: center;"
-        >
+        <h1>
           ***Loading***
         </h1>
       </div>
@@ -19,12 +17,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="my_profile"
-      style="display: flex; gap: 5rem; justify-content: center; padding: 2rem;"
+      class="mission_container"
+      style="display: flex; justify-content: center;"
     >
-      <h1
-        style="font-size: 3rem; text-align: center;"
-      >
+      <h1>
         ***Loading***
       </h1>
     </div>
