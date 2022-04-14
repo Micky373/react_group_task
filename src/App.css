@@ -56,10 +56,8 @@ img {
   background-color: #e8e8e8;
 }
 
-.my_profile,
 .rockets,
 .missions {
-  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -31,12 +31,14 @@ const membershipStyle = {
   border: 'none',
   backgroundColor: '#2d8f8f',
   color: '#ffffff',
+  textTransform: 'uppercase',
 };
 
 const notMemberStyle = {
   border: 'none',
   backgroundColor: '#a9a9a9',
   color: '#ffffff',
+  textTransform: 'uppercase',
 };
 
 const tableStyle = {
