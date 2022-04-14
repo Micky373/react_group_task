@@ -8,32 +8,54 @@ const missionsContainerStyle = {
 };
 
 const joinButtonStyle = {
-  marginLeft: '3rem',
+  border: '1px solid #808080',
+  backgroundColor: 'white',
   cursor: 'pointer',
+  marginLeft: '0.5rem',
+  padding: '0.5rem',
+  fontSize: '1rem',
+  color: '#808080',
 };
 
 const leaveButtonStyle = {
   border: '1px solid rgb(255,0,0)',
   backgroundColor: 'white',
   color: 'red',
-  marginLeft: '3rem',
   cursor: 'pointer',
+  marginLeft: '0.5rem',
+  padding: '0.5rem',
+  fontSize: '1rem',
 };
 
 const membershipStyle = {
-  backgroundColor: '#00ffff',
+  border: 'none',
+  backgroundColor: '#2d8f8f',
   color: '#ffffff',
-  marginRight: '2rem',
+  textTransform: 'uppercase',
 };
 
 const notMemberStyle = {
+  border: 'none',
   backgroundColor: '#a9a9a9',
   color: '#ffffff',
-  marginRight: '2rem',
+  textTransform: 'uppercase',
 };
 
-const listStyle = {
+const tableStyle = {
   margin: '1rem 1rem',
+};
+
+const descriptionColumnStyle = {
+  width: '60%',
+};
+
+const missionStatusStyle = {
+  padding: '0.1rem',
+};
+
+const missionNameStyle = {
+  fontWeight: 'bold',
+  fontSize: '1.2rem',
 };
 
 const Missions = () => {
@@ -43,15 +65,25 @@ const Missions = () => {
   return (
     <div className="mission_container" style={missionsContainerStyle}>
       {(loadingStatus === false) ? (
-        <ul className="mission_list">
-          {missionLists.missions.map((missions) => (
-            <li key={missions.id} style={listStyle}>
-              <button type="button" style={missions.reserved ? membershipStyle : notMemberStyle}>{missions.reserved ? 'Active member' : 'Not a member'}</button>
-              {`id:${missions.id} and name:${missions.name}`}
-              <button type="button" style={missions.reserved ? leaveButtonStyle : joinButtonStyle} onClick={() => dispatch(toggleMissionsReserved(missions.id))}>{missions.reserved ? 'Leave Mission' : 'Join Mission'}</button>
-            </li>
-          ))}
-        </ul>
+        <table style={tableStyle}>
+          <tbody>
+            <tr>
+              <th className="table_header">Missions</th>
+              <th className="table_header">Description</th>
+              <th className="table_header">Status</th>
+            </tr>
+            {missionLists.missions.map((missions) => (
+              <tr key={missions.id} className="mission_list">
+                <td style={missionNameStyle}>{missions.name}</td>
+                <td style={descriptionColumnStyle}>{missions.descriptions}</td>
+                <td style={missionStatusStyle}>
+                  <button type="button" style={missions.reserved ? membershipStyle : notMemberStyle}>{missions.reserved ? 'Active member' : 'Not a member'}</button>
+                  <button type="button" style={missions.reserved ? leaveButtonStyle : joinButtonStyle} onClick={() => dispatch(toggleMissionsReserved(missions.id))}>{missions.reserved ? 'Leave Mission' : 'Join Mission'}</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       ) : <h1>***Loading***</h1>}
     </div>
   );
