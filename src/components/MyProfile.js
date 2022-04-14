@@ -8,7 +8,7 @@ const myProfileContainerStyle = {
 
 const MyProfile = () => {
   const rocketList = useSelector((state) => state.rocket, shallowEqual);
-  const missionLists = useSelector((state) => state.missions.missions, shallowEqual);
+  const missionLists = useSelector((state) => state.missions.mission, shallowEqual) || [];
 
   return (
     <div className="my_profile" style={myProfileContainerStyle}>

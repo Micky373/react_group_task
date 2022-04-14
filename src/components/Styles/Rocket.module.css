@@ -2,6 +2,10 @@
   display: none;
 }
 
+.card {
+  display: flex;
+}
+
 .tag {
   display: inline-block;
   background-color: aqua;
@@ -16,4 +20,18 @@
   background-color: aliceblue;
   color: grey;
   border: 1px solid gray;
+}
+
+.imageContainer,
+.imageContainer > * {
+  height: 10rem;
+  width: 20rem;
+}
+
+.imageContainer {
+  margin-right: 3%;
+}
+
+.Rocket_Info > * {
+  margin: 0;
 }
