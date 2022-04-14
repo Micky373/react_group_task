@@ -22,7 +22,7 @@ export const fetchMissionsList = () => async (dispatch) => {
     const payload = missions.map((missions) => ({
       id: missions.mission_id,
       name: missions.mission_name,
-      descriptions: missions.mission_description,
+      descriptions: missions.description,
       reserved: false,
     }));
     dispatch({

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Quintessential, sans-serif;
 }
 
 li {
@@ -15,6 +16,10 @@ a:focus {
   text-decoration: underline;
 }
 
+button {
+  border-radius: 5px;
+  font-family: Quintessential, sans-serif;
+}
 .nav_container {
   display: flex;
   justify-content: space-around;
@@ -58,4 +63,25 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tr,td {
+  border: 1px solid #bdb4b4;
+  text-align: center;
+  padding: 1rem;
+}
+
+.table_header {
+  border: 1px solid #bdb4b4;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.mission_list:nth-child(even),.mission_list:hover{
+  background-color: #e8e8e8;
 }
